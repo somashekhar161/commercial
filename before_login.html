@@ -47,7 +47,7 @@
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">Pants</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Women</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="product_list.html">Kurtis</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="before_login.html">Kurtis</a>
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">T-Shirts</a>
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">Pants</a></div>
                     </li>
@@ -59,8 +59,8 @@
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active text-center" href="#">&nbsp;<i class="la la-home"></i><br>Home</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-center" data-toggle="dropdown" aria-expanded="false" href="#"><i class="far fa-user"></i><br>Profile</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#" data-toggle="modal" data-target="#log-in">Log In</a>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link text-center" data-toggle="dropdown" aria-expanded="true" href="#"><i class="far fa-user"></i><br>Profile</a>
+                        <div class="dropdown-menu show" role="menu"><a class="dropdown-item" role="presentation" href="#" data-toggle="modal" data-target="#log-in">Log In</a>
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" data-toggle="modal" data-target="#createAccount">Create Account</a></div>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-center" href="#">&nbsp;<i class="far fa-bookmark"></i><br>WishList</a></li>
@@ -76,9 +76,9 @@
                     <h4 class="modal-title">Log In Form</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-group"><label>Enter Your &nbsp;Email</label><input class="form-control" type="email" placeholder="Email" name="email"></div>
-                        <div class="form-group"><label>Enter Your &nbsp;Password</label><input class="form-control" type="password" placeholder="Password" name="pass"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit"><i class="icon ion-log-in"></i>&nbsp;Login</button></div>
+                        <div class="form-group"><label>Enter Your &nbsp;Email</label><input class="form-control" type="email" placeholder="Email" name="email" required=""></div>
+                        <div class="form-group"><label>Enter Your &nbsp;Password</label><input class="form-control" type="password" placeholder="Password" name="pass" required="" minlength="5" maxlength="16"></div>
+                        <div class="form-group"><a class="btn btn-primary btn-block" role="button" href="index.html"><i class="icon ion-log-in"></i>&nbsp;Login</a></div>
                         <hr style="background-color: #30456a;"><button class="btn btn-dark btn-block" type="button" data-dismiss="modal" data-toggle="modal" data-target="#createAccount">Create New Account</button></form>
                 </div>
             </div>
@@ -91,13 +91,13 @@
                     <h4 class="modal-title">Create New Account</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-group"><label for="firstName">First Name</label><input class="form-control" type="text" placeholder="First Name" name="First Name"></div>
-                        <div class="form-group"><label for="lastName">LastName</label><input class="form-control" type="text" placeholder="Last Name" name="LastName"></div>
-                        <div class="form-group"><label for="phoneNumber">Phone Number</label><input class="form-control" type="number" placeholder="Phone Number" name="phoneNumber"></div>
-                        <div class="form-group"><label for="email">Email</label><input class="form-control" type="email" placeholder="Email" name="email"></div>
-                        <div class="form-group"><label for="password">Password</label><input class="form-control" type="password" placeholder="Password" name="password"></div>
-                        <div class="form-group"><label for="password">Re-Enter Password</label><input class="form-control" type="password" placeholder="Password" name="password"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-block" type="button">Create Account</button>
+                        <div class="form-group"><label for="firstName">First Name</label><input class="form-control" type="text" placeholder="First Name" name="First Name" required=""></div>
+                        <div class="form-group"><label for="lastName">LastName</label><input class="form-control" type="text" placeholder="Last Name" name="LastName" required=""></div>
+                        <div class="form-group"><label for="phoneNumber">Phone Number</label><input class="form-control" type="number" placeholder="Phone Number" name="phoneNumber" required=""></div>
+                        <div class="form-group"><label for="email">Email</label><input class="form-control" type="email" placeholder="Email" name="email" required=""></div>
+                        <div class="form-group"><label for="password">Password</label><input class="form-control" type="password" placeholder="Password" name="password" required=""></div>
+                        <div class="form-group"><label for="password">Re-Enter Password</label><input class="form-control" type="password" placeholder="Password" name="password" required=""></div>
+                        <div class="form-group"><a class="btn btn-primary btn-block" role="button" href="index.html">Create Account</a>
                             <hr style="background-color: #30456a;">
                         </div>
                     </form>
@@ -116,36 +116,6 @@
                 </div>
             </form>
         </div>
-    </div>
-    <div class="text-center footer-dark mt-5">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col text-center item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Company Name © 2017</p>
-            </div>
-        </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
